@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4f25ef8c-8afa-4ea6-abbd-5a59ec556ee1" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1xqik9O6kuZ5IeT0uy8CfbLqVXU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="ToolWindowBuild.ShowToolbar" value="false" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="jdk.selected.JAVA_MODULE" value="adopt-openj9-11" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Lektion 12/src" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.19316688" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Alin\OneDrive\PRO1\Lektion 12\src" />
+      <recent name="C:\Users\Alin\OneDrive\PRO1\Lektion 11\src" />
+      <recent name="C:\Users\Alin\OneDrive\PRO1\Lektion 10\src" />
+      <recent name="C:\Users\Alin\OneDrive\PRO1\Projekt Die\src\pairofDices" />
+      <recent name="C:\Users\Alin\OneDrive\PRO1\Projekt Die\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pig" />
+      <recent name="craps" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Opgave1DobbelArray">
+    <configuration name="AfproevDobbelArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="eksempeldobbelarray.AfproevDobbelArray" />
+      <module name="Lektion 12" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="eksempeldobbelarray.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayListApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="opgave1.ArrayListApp" />
+      <module name="Lektion 11" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="opgave1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Opgave1DobbelArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="opgave1_2dobbelArray.Opgave1DobbelArray" />
+      <module name="Lektion 12" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="opgave1_2dobbelArray.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SodaSurvey" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="eksempelsodasurvey.SodaSurvey" />
+      <module name="Lektion 12" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="eksempelsodasurvey.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TeamApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="opgave3.TeamApp" />
+      <module name="Lektion 11" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="opgave3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Opgave1DobbelArray" />
+        <item itemvalue="Application.SodaSurvey" />
+        <item itemvalue="Application.AfproevDobbelArray" />
+        <item itemvalue="Application.TeamApp" />
+        <item itemvalue="Application.ArrayListApp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4f25ef8c-8afa-4ea6-abbd-5a59ec556ee1" name="Changes" comment="" />
+      <created>1631089162369</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1631089162369</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.StackOverflowError" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
