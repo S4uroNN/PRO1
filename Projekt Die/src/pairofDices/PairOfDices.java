@@ -24,8 +24,6 @@ public class PairOfDices {
 
 	//Constructor for objects of class PairOfDices
 
-	// TODO: put the constructor here!
-
 	public PairOfDices() {
 		die1 = new Die();
 		die2 = new Die();

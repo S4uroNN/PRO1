@@ -1,5 +1,6 @@
 package afleveringfravaer;
 
+import javax.swing.event.InternalFrameAdapter;
 import java.sql.SQLOutput;
 
 public class FravaersSystem {
@@ -9,12 +10,11 @@ public class FravaersSystem {
 	 * @param fravaer
 	 */
 	public void udskrivFravaer(int[][] fravaer) {
-		// TODO opgave 1
 		int elev = 1;
 		int month = 1;
 		System.out.println();
 		for (int row = 0; row < fravaer.length; row++) {
-			System.out.print("Elev: " + elev + "|");
+			System.out.print("Elev: " + elev + "| ");
 			elev++;
 
 					for (int col = 0; col < fravaer[row].length; col++) {
@@ -36,12 +36,11 @@ public class FravaersSystem {
 	 * @return
 	 */
 	public int samletFravaer(int[][] fravaer, int elevNr) {
-		// TODO opgave 2
 		int sum = 0;
 		for(int i = 0; i<fravaer[elevNr].length;i++){
 			sum = sum + fravaer[elevNr][i];
 		}
-		System.out.println("Elev Nr: " + elevNr + 1 + " fraværende dage: ");
+
 		return sum;
 
 	}
@@ -55,12 +54,17 @@ public class FravaersSystem {
 	 * @return
 	 */
 	public double gennemsnit(int[][] fravaer, int elevNr) {
-		// TODO opgave 3
 		int amountOfDays = fravaer[elevNr].length;
 		int sum = 0;
 		double average = 0;
+		int elevnummer = elevNr + 1;
+		for(int i = 0;i<fravaer[elevNr].length;i++){
+			sum = sum + fravaer[elevNr][i];
+		}
 
-
+		if(amountOfDays>2){
+			average = (double) sum /amountOfDays;
+		}
 		return average;
 	}
 
@@ -71,8 +75,14 @@ public class FravaersSystem {
 	 * @return
 	 */
 	public int antalUdenFravaer(int[][] fravaer) {
-		// TODO opgave 4
-		return -1;
+		int udenFravær = 0;
+		for(int i = 0;i<fravaer.length;i++){
+			if(samletFravaer(fravaer,i)==0){
+				udenFravær++;
+			}
+		}
+
+		return udenFravær;
 	}
 
 	/**
@@ -84,8 +94,16 @@ public class FravaersSystem {
 	 * @return
 	 */
 	public int mestFravaer(int[][] fravaer) {
-		// TODO opgave 5
-		return -1;
+
+		int maxfravær = 0;
+		int elev = 0;
+		for(int i = 0;i<fravaer.length;i++){
+			if(samletFravaer(fravaer,i)> maxfravær){
+				maxfravær = samletFravaer(fravaer,i);
+				elev = i + 1;
+			}
+		}
+		return elev;
 	}
 
 	/**
@@ -96,6 +114,9 @@ public class FravaersSystem {
 	 * @param elevNr
 	 */
 	public void nulstil(int[][] fravaer, int elevNr) {
-		// TODO opgave 6
+		for(int i = 0; i<fravaer[elevNr].length;i++){
+			fravaer[elevNr][i] = 0;
+		}
+
 	}
 }

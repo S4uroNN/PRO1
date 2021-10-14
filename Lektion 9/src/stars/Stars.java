@@ -14,19 +14,19 @@ public class Stars {
     }
 
     public void starPictureA() {
-        // TODO
+        //
     }
 
     public void starPictureB() {
-        // TODO
+        //
     }
 
     public void starPictureC() {
-        // TODO
+        //
     }
 
     public void starPictureD() {
-        // TODO
+        //
     }
 
 }
