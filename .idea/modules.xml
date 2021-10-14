@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Fraværsystem/Fraværsystem.iml" filepath="$PROJECT_DIR$/Fraværsystem/Fraværsystem.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lektion 1/Lektion 1.iml" filepath="$PROJECT_DIR$/Lektion 1/Lektion 1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lektion 10/Lektion 10.iml" filepath="$PROJECT_DIR$/Lektion 10/Lektion 10.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lektion 11/Lektion 11.iml" filepath="$PROJECT_DIR$/Lektion 11/Lektion 11.iml" />
