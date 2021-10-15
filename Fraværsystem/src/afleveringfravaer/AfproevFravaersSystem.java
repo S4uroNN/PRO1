@@ -1,7 +1,5 @@
 package afleveringfravaer;
 
-import java.net.SocketTimeoutException;
-
 public class AfproevFravaersSystem {
 
     public static void main(String[] args) {
