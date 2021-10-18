@@ -26,7 +26,7 @@ public class Person {
 
 	@Override
 	public String toString() {
-		String s = firstName + " " + title;
+		String s = title + " " + firstName;
 		if(senior){
 			s = s + " (senior)";
 		}

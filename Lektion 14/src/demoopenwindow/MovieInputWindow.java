@@ -99,6 +99,7 @@ public class MovieInputWindow extends Stage {
         }
     }
 
+
     // -------------------------------------------------------------------------
 
     public Movie getActualMovie() {
