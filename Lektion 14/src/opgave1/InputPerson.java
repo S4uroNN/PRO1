@@ -1,7 +1,5 @@
 package opgave1;
 
-import demoopenwindow.MovieInputWindow;
-import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -9,7 +7,6 @@ import javafx.scene.layout.GridPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import org.w3c.dom.Text;
 
 public class InputPerson extends Stage {
 
@@ -67,7 +64,7 @@ public class InputPerson extends Stage {
         String name = txfName.getText().trim();
         String title = txfTitle.getText().trim();
         if (name.length() > 0 && title.length()> 0) {
-            person = new Person(name,title,chkSenior.isSelected());
+            person = new Person(name);
             txfName.clear();
             txfTitle.clear();
             InputPerson.this.hide();

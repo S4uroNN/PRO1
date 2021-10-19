@@ -1,6 +1,5 @@
 package opgave1;
 
-import demoopenwindow.Movie;
 import javafx.application.Application;
 import javafx.beans.value.ChangeListener;
 import javafx.geometry.Insets;
@@ -108,7 +107,7 @@ public class Gui extends Application {
         if(addPerson != null){
             String name = addPerson.getPerson();
             String title = addPerson.getTitle1();
-            Person p = new Person(name, title, addPerson.chkSenior.isSelected());
+            Person p = new Person(name);
             persons.add(p);
             lvwPersons.getItems().setAll(persons);
 
@@ -119,7 +118,7 @@ public class Gui extends Application {
         String name = txfName.getText().trim();
         String title = txfTitle.getText().trim();
         if (name.length() > 0 && title.length()> 0) {
-            Person p = new Person(name, title, chkActive.isSelected());
+            Person p = new Person(name);
             persons.add(p);
             lvwPersons.getItems().setAll(persons);
         }else {
@@ -147,9 +146,9 @@ public class Gui extends Application {
     }
 
     private void initPersons() {
-        persons.add(new Person("Jens", "Jensen", true));
-        persons.add(new Person("Hans", "Hansen", false));
-        persons.add(new Person("Pia", "Peters", false));
+        persons.add(new Person("Jens"));
+        persons.add(new Person("Hans"));
+        persons.add(new Person("Pia"));
     }
 
     // -------------------------------------------------------------------------

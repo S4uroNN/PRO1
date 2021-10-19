@@ -6,7 +6,7 @@ public class Person {
 	private String email;
 	private boolean senior;
 
-	public Person(String title, String firstName, boolean senior) {
+	public Person(String title) {
 		this.firstName = firstName;
 		this.title = title;
 		this.senior = senior;
