@@ -36,6 +36,7 @@ public class FravaersSystem {
 	 * @return
 	 */
 	public int samletFravaer(int[][] fravaer, int elevNr) {
+		elevNr = elevNr -1;
 		int sum = 0;
 		for(int i = 0; i<fravaer[elevNr].length;i++){
 			sum = sum + fravaer[elevNr][i];
@@ -76,7 +77,7 @@ public class FravaersSystem {
 	 */
 	public int antalUdenFravaer(int[][] fravaer) {
 		int udenFravær = 0;
-		for(int i = 0;i<fravaer.length;i++){
+		for(int i = 1;i<fravaer.length;i++){
 			if(samletFravaer(fravaer,i)==0){
 				udenFravær++;
 			}
@@ -97,10 +98,10 @@ public class FravaersSystem {
 
 		int maxfravær = 0;
 		int elev = 0;
-		for(int i = 0;i<fravaer.length;i++){
+		for(int i = 1;i<fravaer.length;i++){
 			if(samletFravaer(fravaer,i)> maxfravær){
 				maxfravær = samletFravaer(fravaer,i);
-				elev = i + 1;
+				elev = i;
 			}
 		}
 		return elev;
@@ -114,6 +115,7 @@ public class FravaersSystem {
 	 * @param elevNr
 	 */
 	public void nulstil(int[][] fravaer, int elevNr) {
+		elevNr = elevNr-1;
 		for(int i = 0; i<fravaer[elevNr].length;i++){
 			fravaer[elevNr][i] = 0;
 		}
