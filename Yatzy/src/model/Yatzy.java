@@ -54,13 +54,12 @@ public class Yatzy {
      * boolean values.
      */
     public void throwDice(boolean[] holds) {
-        throwCount++;
         for (int i = 0; i < values.length; i++) {
             if (!holds[i]) {
                 values[i] = random.nextInt(6) + 1;
             }
         }
-
+        throwCount++;
     }
 
     // -------------------------------------------------------------------------
