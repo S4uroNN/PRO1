@@ -97,7 +97,7 @@ public class YatzyGui extends Application {
         scorePane.setVgap(5);
         scorePane.setHgap(10);
         scorePane.setStyle("-fx-border-color: black");
-        int w = 50; // width of the text fields
+        double w = 74.3; // width of the text fields
 
         // Initialize labels for results, txfResults,
         Label ones = new Label("1s");
@@ -143,7 +143,7 @@ public class YatzyGui extends Application {
         for (int i = 0; i < txfresults.length; i++) {
             TextField txfresult = new TextField();
             this.txfresults[i] = txfresult;
-            txfresult.setPrefWidth(80);
+            txfresult.setPrefWidth(w);
             txfresult.setAlignment(Pos.CENTER_LEFT);
             if (i <= 5) {
                 txfresult.setOnMouseClicked(event -> this.chooseFieldAction(event));
@@ -153,25 +153,25 @@ public class YatzyGui extends Application {
             scorePane.add(txfresult, 1, i);
         }
         txfSumSame = new TextField();
-        txfSumSame.setPrefWidth(70);
+        txfSumSame.setPrefWidth(w);
         scorePane.add(txfSumSame, 3, 5);
         txfSumSame.setStyle("-fx-text-fill: blue; -fx-font-size: 12px;");
         txfSumSame.setEditable(false);
 
         txfBonus = new TextField();
-        txfBonus.setPrefWidth(70);
+        txfBonus.setPrefWidth(w);
         scorePane.add(txfBonus, 5, 5);
         txfBonus.setStyle("-fx-text-fill: blue; -fx-font-size: 12px;");
         txfBonus.setEditable(false);
 
         txfSumOther = new TextField();
-        txfSumOther.setPrefWidth(70);
+        txfSumOther.setPrefWidth(w);
         scorePane.add(txfSumOther, 3, 14);
         txfSumOther.setStyle("-fx-text-fill: blue; -fx-font-size: 12px;");
         txfSumOther.setEditable(false);
 
         txfTotal = new TextField();
-        txfTotal.setPrefWidth(70);
+        txfTotal.setPrefWidth(w);
         scorePane.add(txfTotal, 5, 14);
         txfTotal.setStyle("-fx-text-fill: blue; -fx-font-size: 12px;");
         txfTotal.setEditable(false);
@@ -288,15 +288,13 @@ public class YatzyGui extends Application {
     }
 
     public void endgame() {
-        boolean end = false;
-        Alert alert = new Alert(Alert.AlertType.WARNING);
-        alert.setTitle("GAME OVER");
-        alert.setHeaderText("Game over: Your score: " + txfTotal.getText());
-
-
+        boolean end;
         end = isUsed[0] && isUsed[1] && isUsed[2] && isUsed[3] && isUsed[4] && isUsed[5] && isUsed[6] && isUsed[7] && isUsed[8] && isUsed[9] && isUsed[10] && isUsed[11] && isUsed[12] && isUsed[13] && isUsed[14];
 
         if (end) {
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("GAME OVER");
+            alert.setHeaderText("Game over: Your score: " + txfTotal.getText());
             alert.showAndWait();
             Platform.exit();
         }
