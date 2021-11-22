@@ -104,7 +104,7 @@ public class CompanyWindow extends Stage {
 				hours = Integer.parseInt(txfHours.getText().trim());
 			} catch (NumberFormatException ex) {
 				// do nothing
-			}
+				}
 			if (hours < 0) {
 				lblError.setText("Hours is not a positive number");
 			} else {

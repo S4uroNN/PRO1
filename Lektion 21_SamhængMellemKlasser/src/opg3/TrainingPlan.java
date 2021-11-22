@@ -8,7 +8,7 @@ import java.util.ArrayList;
  */
 public class TrainingPlan {
     private char level;
-    private int weeklyWaterHours;
+      private int weeklyWaterHours;
     private int weeklyStrengthHours;
     private final ArrayList<Swimmer> swimmers = new ArrayList<>();
 
