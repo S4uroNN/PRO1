@@ -28,8 +28,7 @@ public class Mekaniker extends Person {
     }
 
     public int berengLøn(){
-        int ugeløn = 0;
-        ugeløn += timesats * 37;
+        int ugeløn = timesats * 37;
         return ugeløn;
     }
 }

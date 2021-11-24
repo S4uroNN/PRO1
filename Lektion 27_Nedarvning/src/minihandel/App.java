@@ -44,16 +44,17 @@ public class App {
 
         System.out.println(c1.totalBuy());
         System.out.println(c2.totalBuy());
-
+        System.out.println();
+        System.out.println();
         Discount d1 = new PercentDiscount(15);
         Discount d2 = new FixedDiscount(200,5000);
 
 
-        c1.addDiscount(d1);
+        c1.setDiscount(d1);
         System.out.println(c1.totalBuy());
         System.out.println(c1.totalBuyWithDiscount());
         System.out.println();
-        c2.addDiscount(d2);
+        //c2.setDiscount(d2);
         System.out.println(c2.totalBuy());
         System.out.println(c2.totalBuyWithDiscount());
 

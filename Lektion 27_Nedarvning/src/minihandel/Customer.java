@@ -22,6 +22,7 @@ public class Customer {
 	public Customer(String name, LocalDate birthday) {
 		this.name = name;
 		this.birthday = birthday;
+		discount = new Discount();
 	}
 
 	public String getName() {
@@ -40,7 +41,7 @@ public class Customer {
 		return new ArrayList<Order>(orders);
 	}
 
-	public void addDiscount(Discount discount){
+	public void setDiscount(Discount discount){
 		if(this.discount !=discount){
 			this.discount = discount;
 		}
