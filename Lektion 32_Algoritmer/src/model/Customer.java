@@ -13,11 +13,14 @@ public class Customer implements Comparable<Customer> {
 	
 	@Override
     public int compareTo(Customer customer) {
-		int comp = lastName.compareTo(customer.getLastName());
-		if (comp == 0) {
-			comp = firstName.compareTo(customer.getFirstName());
-			if (comp==0) {
-				comp = age-customer.getAge();
+		int comp = 0;
+		if(customer != null){
+			comp = lastName.compareTo(customer.getLastName());
+			if (comp == 0) {
+				comp = firstName.compareTo(customer.getFirstName());
+				if (comp==0) {
+					comp = age-customer.getAge();
+				}
 			}
 		}
 		return comp;
