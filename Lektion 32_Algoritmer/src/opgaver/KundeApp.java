@@ -1,4 +1,4 @@
-package model;
+package opgaver;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -39,10 +39,11 @@ public class KundeApp {
         System.out.println(Arrays.toString(customers1));
         System.out.println();
 
-        System.out.println(returnSame("Jubiiii",4));
-        System.out.println(returnSame("Jubiiii",5));
+        System.out.println(numberOfCnharsInARow("Jubiiiii", 5));
+        System.out.println(numberOfCnharsInARow("Jubiiiii", 6));
 
     }
+
     //Opgave 1
     public static void indsætKunde(ArrayList<Customer> kunder, Customer customer) {
         int index = -1;
@@ -56,6 +57,7 @@ public class KundeApp {
             }
         }
     }
+
     //Opgave 2
     public static void indsætKunde(Customer[] customers, Customer customer) {
         int j = customers.length - 1;
@@ -65,7 +67,7 @@ public class KundeApp {
         j++;
         boolean found = false;
         while (!found && j > 0) {
-            if (customer.compareTo(customers[j - 1])>0) {
+            if (customer.compareTo(customers[j - 1]) > 0) {
                 found = true;
             } else {
                 customers[j] = customers[j - 1];
@@ -97,14 +99,26 @@ public class KundeApp {
 
     //Opgave3
 
-    public static boolean returnSame(String sm, int i){
+    public static boolean numberOfCnharsInARow(String s, int k) {
+        boolean found = false;
+        int i = 0;
+        while (!found && i < s.length() - (k - 1)) {
+            if (match(s, i, k)) {
+                found = true;
+            } else {
+                i++;
+            }
+        }
+        return found;
+    }
+
+    private static boolean match(String sm, int m, int i) {
         boolean foundDiff = false;
         int j = 0;
-        while (!foundDiff && j < sm.length()-i) {
-            if (sm.charAt(i+j)!= i) {
+        while (!foundDiff && j < i) {
+            if (sm.charAt(i) != sm.charAt(m + j)) {
                 foundDiff = true;
-            }
-            else {
+            } else {
                 j++;
             }
         }
