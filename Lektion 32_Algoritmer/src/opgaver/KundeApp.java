@@ -42,21 +42,24 @@ public class KundeApp {
         System.out.println(numberOfCnharsInARow("Jubiiiii", 5));
         System.out.println(numberOfCnharsInARow("Jubiiiii", 6));
 
+
+
     }
 
     //Opgave 1
-    public static void indsætKunde(ArrayList<Customer> kunder, Customer customer) {
+    public static void indsætKunde(ArrayList<Customer> customers, Customer customer) {
         int index = -1;
         int i = 0;
-        while (index == -1 && i < kunder.size()) {
-            if (kunder.get(i).compareTo(customer) > 0) {
-                kunder.add(i, customer);
+        while (index == -1 && i < customers.size()) {
+            if (customers.get(i).compareTo(customer) > 0) {
+                customers.add(i, customer);
                 index = i;
             } else {
                 i++;
             }
         }
     }
+
 
     //Opgave 2
     public static void indsætKunde(Customer[] customers, Customer customer) {
